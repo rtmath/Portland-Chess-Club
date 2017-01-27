@@ -11,6 +11,10 @@ export class MemberService {
     this.members = angularFire.database.list('members');
   }
 
+  addMember(newMember: Member) {
+    this.members.push(newMember);
+  }
+
   getMembers() {
     return this.members;
   }

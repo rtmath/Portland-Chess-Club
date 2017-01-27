@@ -1,0 +1,30 @@
+<h3>Add New Member to Portland Chess Club Roster</h3>
+<form>
+  <div>
+    <label>Member Name:</label>
+    <br>
+    <input required #newName >
+  </div>
+
+  <div>
+    <label>Member Location:</label>
+    <br>
+    <input required #newLocation >
+  </div>
+
+  <div>
+    <label>Member Rating:</label>
+    <br>
+    <input required #newRating >
+  </div>
+
+  <div>
+    <label>Member Bio:</label>
+    <br>
+    <textarea required #newBio></textarea>
+  </div>
+
+  <button
+    (click)="addNewMember(newName.value, newLocation.value, newRating.value, newBio.value);"
+    >Add</button>
+</form>
