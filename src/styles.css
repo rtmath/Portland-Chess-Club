@@ -11,3 +11,7 @@ button:hover {
   background-color: green;
   color: white;
 }
+
+body {
+  background-color: darkgrey;
+}
