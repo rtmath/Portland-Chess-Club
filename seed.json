@@ -1,0 +1,16 @@
+{
+  "members" : {
+    "1": {
+      "name" : "Bobby Fisher",
+      "location" : "Portland, OR",
+      "rating" : "3000",
+      "bio": "I'm just a guy who likes chess."
+    },
+    "2": {
+      "name" : "Gary Kasparov",
+      "location" : "Novgorod, Russia",
+      "rating" : "3000",
+      "bio": "Mne nravitsya schachmati."
+    }
+  }
+}

@@ -1,7 +1,8 @@
 <h3>Member List:</h3>
 
-<div *ngFor="let member of members">
+<div *ngFor="let member of members | async">
   <h4>{{member.name}}</h4>
   <h5>{{member.location}}</h5>
   <h5>{{member.rating}}</h5>
+  <h5>{{member.bio}}</h5>
 </div>
