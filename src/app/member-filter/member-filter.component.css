@@ -1,0 +1,8 @@
+.filter {
+  display: flex;
+}
+
+.name-filter, .rating-filter {
+  margin-left: 2%;
+  margin-right: 2%;
+}

@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+button {
+  transition: all 0.4s;
+  border-radius: 20px;
+  border: 3px solid green;
+  background-color: transparent;
+}
+
+button:hover {
+  transition: all 0.4s;
+  background-color: green;
+  color: white;
+}

@@ -1,6 +1,6 @@
 <h3>Member List:</h3>
 
-<div *ngFor="let member of members | async" >
+<div *ngFor="let member of members | async" (click)="viewDetails(member)">
   <h3>{{member.name}}</h3>
   <h4>{{member.rating}} || {{member.location}}</h4>
   <div *ngIf="currentRoute === '/admin'">
