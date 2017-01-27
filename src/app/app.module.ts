@@ -17,6 +17,7 @@ import { MemberFilterComponent } from './member-filter/member-filter.component';
 import { ByNamePipe } from './by-name.pipe';
 import { ByRatingPipe } from './by-rating.pipe';
 import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     MemberFilterComponent,
     ByNamePipe,
     ByRatingPipe,
-    AboutComponent
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
