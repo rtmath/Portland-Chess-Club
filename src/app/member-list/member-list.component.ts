@@ -15,7 +15,7 @@ import { ByNamePipe } from '../by-name.pipe';
 export class MemberListComponent implements OnInit {
 
   nameFilter: string = "";
-  ratingFilter: number;
+  ratingFilter: number = 0;
 
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
@@ -35,6 +35,8 @@ export class MemberListComponent implements OnInit {
   }
 
   setRatingFilter(rating: number) {
-    this.ratingFilter = rating;
+    if (rating != null && rating >= 0) {
+      this.ratingFilter = rating;
+    }
   }
 }

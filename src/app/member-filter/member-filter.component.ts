@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'member-filter',
@@ -8,6 +8,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 export class MemberFilterComponent implements OnInit {
 
+  @Input() currentNameFilter: string;
+  @Input() currentRatingFilter: number;
   @Output() nameFilterSender = new EventEmitter();
   @Output() ratingFilterSender = new EventEmitter();
 
@@ -16,9 +18,12 @@ export class MemberFilterComponent implements OnInit {
   ngOnInit() {
   }
 
-  filter(name, rating) {
-    this.nameFilterSender.emit(name);
-    this.ratingFilterSender.emit(rating);
+  changeName() {
+      this.nameFilterSender.emit(this.currentNameFilter);
+  }
+
+  changeRating() {
+    this.ratingFilterSender.emit(this.currentRatingFilter);
   }
 
 }

@@ -2,7 +2,7 @@
 
 <h3>Member List:</h3>
 
-<div *ngFor="let member of members | async | byName:nameFilter">
+<div *ngFor="let member of members | async | byName:nameFilter | byRating:ratingFilter">
   <h3>{{member.name}}</h3>
   <h4>{{member.rating}} || {{member.location}}</h4>
   <button *ngIf="currentRoute != '/admin'" type="button" (click)="viewDetails(member)">View Profile</button>

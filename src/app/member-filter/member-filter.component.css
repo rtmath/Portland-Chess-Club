@@ -1,8 +1,19 @@
 .filter {
   display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.filter-body {
+  width: 50%;
+  display: flex;
 }
 
 .name-filter, .rating-filter {
+  justify-content: center;
+  text-align: center;
   margin-left: 2%;
   margin-right: 2%;
+  flex: 1 45%;
 }

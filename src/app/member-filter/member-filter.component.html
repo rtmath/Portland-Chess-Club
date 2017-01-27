@@ -1,11 +1,12 @@
 <div class="filter">
-  <div class="name-filter">
-    <label>Filter by Name:</label>
-    <input type="text" #nameFilter>
+  <div class="filter-body">
+    <div class="name-filter">
+      <label>Filter by Name:</label>
+      <input [(ngModel)]="currentNameFilter" (ngModelChange)="changeName()" type="text" #nameFilter>
+    </div>
+    <div class="rating-filter">
+      <label>Filter by Rating greater than:</label>
+      <input [(ngModel)]="currentRatingFilter" (ngModelChange)="changeRating()" type="number" #ratingFilter>
+    </div>
   </div>
-  <div class="rating-filter">
-    <label>Filter by Rating:</label>
-    <input type="number" #ratingFilter>
-  </div>
-  <button type="button" (click)="filter(nameFilter.value, ratingFilter.value)">Filter</button>
 </div>
