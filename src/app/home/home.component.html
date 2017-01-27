@@ -1,3 +1,7 @@
-<p>
-  home works!
-</p>
+<h3>Announcements</h3>
+
+<div *ngFor="let announcement of announcements">
+  <strong>{{announcement.title}}</strong><br>
+  {{announcement.description}}
+  <hr>
+</div>
