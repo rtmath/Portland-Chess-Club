@@ -23,4 +23,19 @@ export class MemberService {
     return this.angularFire.database.object('members/' + keyId);
   }
 
+  updateMember(member) {
+    var dbMember = this.getMemberByKey(member.$key);
+    dbMember.update({
+      name: member.name,
+      location: member.location,
+      rating: member.rating,
+      bio: member.bio
+    })
+  }
+
+  deleteMember(member) {
+    var dbMember = this.getMemberByKey(member.$key);
+    dbMember.remove();
+  }
+
 }

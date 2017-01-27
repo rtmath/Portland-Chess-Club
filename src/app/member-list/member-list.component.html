@@ -1,7 +1,11 @@
 <h3>Member List:</h3>
 
-<div *ngFor="let member of members | async" (click)="viewDetails(member)">
-  <h4>{{member.name}}</h4>
-  <h5>{{member.location}}</h5>
+<div *ngFor="let member of members | async" >
+  <h3>{{member.name}}</h3>
+  <h4>{{member.rating}} || {{member.location}}</h4>
+  <div *ngIf="currentRoute === '/admin'">
+    {{member.bio}}
+    <member-edit [selectedMember]="member"></member-edit>
+  </div>
   <hr>
 </div>

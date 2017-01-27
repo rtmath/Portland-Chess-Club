@@ -1,3 +1,29 @@
-<p>
-  member-edit works!
-</p>
+<form class="edit-form">
+  <div class="form-input">
+    <label>Edit Name:</label>
+    <br>
+    <input [(ngModel)]="selectedMember.name" name="name" required #newName >
+  </div>
+
+  <div class="form-input">
+    <label>Edit Location:</label>
+    <br>
+    <input [(ngModel)]="selectedMember.location" name="location" required #newLocation >
+  </div>
+
+  <div class="form-input">
+    <label>Edit Rating:</label>
+    <br>
+    <input [(ngModel)]="selectedMember.rating" name="rating" required #newRating >
+  </div>
+
+  <div class="form-input">
+    <label>Edit Bio:</label>
+    <br>
+    <textarea [(ngModel)]="selectedMember.bio" name="bio" required #newBio></textarea>
+  </div>
+
+  <button type="button" (click)="saveChanges(selectedMember)">Save Changes</button>
+</form>
+
+<button type="button" (click)="deleteMember(selectedMember)">Remove Member</button>
