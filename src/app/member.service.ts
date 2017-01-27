@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Member } from './member.model';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Member } from './member.model';
 
 @Injectable()
 export class MemberService {
@@ -17,6 +17,10 @@ export class MemberService {
 
   getMembers() {
     return this.members;
+  }
+
+  getMemberByKey(keyId: string) {
+    return this.angularFire.database.object('members/' + keyId);
   }
 
 }
