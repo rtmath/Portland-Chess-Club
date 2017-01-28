@@ -17,15 +17,15 @@ This project requires:
 
 ## Installation
   * Clone this repository to a location on your computer
-  * Add a file named api-keys.ts that exports the following code (adding your api key info from firebase):
-    * ```export var masterFirebaseConfig = {
-      apiKey: "YOUR API KEY HERE",
-      authDomain: "YOUR AUTHDOMAIN HERE",
-      databaseURL: "YOUR DATABASE URL HERE",
-      storageBucket: "YOUR STORAGE BUCKET HERE",
-      messagingSenderId: "YOUR MESSAGING SENDER ID"
+  * Add a ~/src/app/api-keys.ts file with the following code (adding your api key info from firebase):
+   * ```export var masterFirebaseConfig = {
+    apiKey: "YOUR API KEY HERE",
+    authDomain: "YOUR AUTHDOMAIN HERE",
+    databaseURL: "YOUR DATABASE URL HERE",
+    storageBucket: "YOUR STORAGE BUCKET HERE",
+    messagingSenderId: "YOUR MESSAGING SENDER ID"
     };```
-  * Navigate to that location using your console/terminal and run the following commands:
+  * Navigate to the repo location using your console/terminal and run the following commands:
     * npm install
     * bower install
     * ng serve

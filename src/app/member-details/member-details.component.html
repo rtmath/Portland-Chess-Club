@@ -1,7 +1,21 @@
-<h3>Member Details for {{(memberToDisplay | async)?.name}}:</h3>
 
-<h4>Location: {{(memberToDisplay | async)?.location}}</h4>
-<h4>ELO Rating: {{(memberToDisplay | async)?.rating}}</h4>
-<h4>{{(memberToDisplay | async)?.bio}}</h4>
 
+<div class="list-container">
+  <div class="list-item">
+    <div class="title">
+      <div class="title-name">
+        <h3>Member Details for {{(memberToDisplay | async)?.name}}:</h3>
+      </div>
+    </div>
+    <div class="location-body">
+      ELO Rating: <h3>{{(memberToDisplay | async)?.rating}}</h3>
+      <div class="location">
+      Location: <h3>{{(memberToDisplay | async)?.location}}</h3>
+      </div>
+    </div>
+    <hr>
+    Bio: <br>
+    <h3>{{(memberToDisplay | async)?.bio}}</h3>
+  </div>
+</div>
 <a routerLink="/members">Return</a>
