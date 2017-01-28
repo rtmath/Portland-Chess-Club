@@ -1,16 +1,40 @@
 {
   "members" : {
-    "1": {
-      "name" : "Bobby Fisher",
-      "location" : "Portland, OR",
-      "rating" : "3000",
-      "bio": "I'm just a guy who likes chess."
+    "1" : {
+      "bio" : "Hey guys, stoked to be part of PCC",
+      "location" : "Oslo, Norway",
+      "name" : "Magnus Carlsen",
+      "rating" : "2882"
     },
-    "2": {
-      "name" : "Gary Kasparov",
-      "location" : "Novgorod, Russia",
-      "rating" : "3000",
-      "bio": "Mne nravitsya schachmati."
+    "2" : {
+      "bio" : "Privet, kak u tebya dela?",
+      "location" : "St Petersburg, Russia",
+      "name" : "Garry Kasparov",
+      "rating" : "2851"
+    },
+    "3" : {
+      "bio" : "I love chess!!!!",
+      "location" : "Miami, FL",
+      "name" : "Fabiano Curuana ",
+      "rating" : "2844"
+    },
+    "4" : {
+      "bio" : "Anyone wanna play some games?",
+      "location" : "Yerevan, Armenia",
+      "name" : "Levon Aronian",
+      "rating" : "2830"
+    },
+    "5" : {
+      "bio" : "Bonjour from the Portland Chess Club",
+      "location" : "Paris, France",
+      "name" : "Maxime Vachier-Lagrave",
+      "rating" : "2819"
+    },
+    "6" : {
+      "bio" : "Trying to raise my ELO just a little higher!",
+      "location" : "New Delhi, India",
+      "name" : "Viswanathan Anand",
+      "rating" : "2817"
     }
   }
 }

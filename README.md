@@ -1,6 +1,12 @@
 # ChessClub
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+## by Ryan Mathisen 1/27/17
+
+# Description
+
+_This project is an exercise implementing Firebase and AngularFire2 with core Angular concepts from last week. This application is a fake website for a Portland Chess Club, featuring full member CRUD functionality for admins. At this time there is no user authentication.
+
+**A seed.json is supplied with this project if you would like to import it to your own firebase for ease of use.**
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
