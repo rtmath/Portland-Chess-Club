@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { routing } from './app.routing';
 
-import { AngularFireModule } from 'angularfire2';
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { masterFirebaseConfig } from './api-keys';
 
 import { AppComponent } from './app.component';

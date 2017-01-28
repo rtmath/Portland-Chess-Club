@@ -1,0 +1,14 @@
+h3 {
+  text-align: center;
+}
+
+.about-container {
+  border: 2px solid black;
+  background-color: #475844;
+  padding: 3%;
+}
+
+.link {
+  margin-top: 1%;
+  text-align: center;
+}

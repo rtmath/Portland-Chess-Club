@@ -1,0 +1,65 @@
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  border: 1px solid #af4538;
+  margin: 1px;
+  flex: 1 33%;
+  max-width: 33%;
+  background-color: #475844;
+  overflow: hidden;
+}
+
+.title {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  background-color: #af4538;
+  padding: 5px;
+  margin: 0;
+}
+
+.title-name {
+  position: relative;
+  float: left;
+}
+
+.title-rating {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+}
+
+.location-body {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+}
+
+.location {
+  float: left;
+  line-height: 30px;
+}
+
+.profile-button {
+  float: right;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.bio {
+  padding: 5px;
+}
+
+button {
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}

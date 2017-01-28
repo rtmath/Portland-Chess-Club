@@ -1,11 +1,24 @@
+.add-form-container {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid #af4538;
+}
+
+.add-form-title {
+  background-color: #af4538;
+}
+
 .add-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #475844;
 }
 
 .form-input {
-  flex: 1 25%;
+  text-align: center;
+  flex: 1 45%;
 }
 
 textarea {
@@ -17,4 +30,11 @@ button {
   flex: 2 15%;
   max-height: 35px;
   max-width: 30%;
+  margin-bottom: 2%;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+  padding: 5px;
 }

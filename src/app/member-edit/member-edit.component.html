@@ -22,7 +22,12 @@
     <br>
     <textarea [(ngModel)]="selectedMember.bio" name="bio" required #newBio></textarea>
   </div>
-
-  <button type="button" (click)="saveChanges(selectedMember)">Save Changes</button>
-  <button type="button" (click)="deleteMember(selectedMember)">Remove Member</button>
+  <div class="buttons">
+    <div class="button">
+      <button class="button" type="button" (click)="saveChanges(selectedMember)">Save Changes</button>
+    </div>
+    <div class="button">
+      <button class="button" type="button" (click)="deleteMember(selectedMember)">Remove Member</button>
+    </div>
+  </div>
 </form>

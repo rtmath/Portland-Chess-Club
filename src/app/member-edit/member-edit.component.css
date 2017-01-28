@@ -1,9 +1,14 @@
 .edit-form {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 .form-input {
-  flex: 1 20%;
+  text-align: center;
+  flex: 1 50%;
 }
 
 textarea {
@@ -13,4 +18,15 @@ textarea {
 
 button {
   max-height: 55px;
+  max-width: 100px;
+}
+
+.buttons {
+  flex: 2 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.button {
+  flex: 3 50%;
 }

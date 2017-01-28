@@ -1,17 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 button {
-  transition: all 0.4s;
+  transition: all 0.3s;
   border-radius: 20px;
-  border: 3px solid green;
+  border: 3px solid #C95041;
   background-color: transparent;
-}
-
-button:hover {
-  transition: all 0.4s;
-  background-color: green;
   color: white;
 }
 
+button:hover {
+  transition: all 0.3s;
+  border: 3px solid #F9AAAA;
+  background-color: #F9AAAA;
+  color: black;
+  cursor: pointer;
+}
+
 body {
-  background-color: darkgrey;
+  background-color: #313A3A;
+  color: #E6E2DE;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #BBB9B8;
+}
+
+a:visited {
+  color: #C95041;
+}
+
+label {
+  margin-top: 4%;
+}
+
+input {
+  margin-bottom: 2%;
+  background-color: #313A3A;
+  color: #F9AAAA;
+}
+
+textarea {
+  background-color: #313A3A;
+  color: #F9AAAA;
+}
+
+
+.link {
+  margin-top: 1%;
+  text-align: center;
 }
